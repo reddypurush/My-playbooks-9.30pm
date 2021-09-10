@@ -1,0 +1,10 @@
+---
+- name: Insatlled a user 
+  hosts: all
+  become: true 
+  tasks: 
+  - name: Installing a package 'git'
+    yum: 
+      name: tree
+      state: installed
+
